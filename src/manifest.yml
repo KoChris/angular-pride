@@ -3,4 +3,3 @@
 applications:
 - name: pridehack-fe
   buildpack: staticfile_buildpack
-  path: /dist
