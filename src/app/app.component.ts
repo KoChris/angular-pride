@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Company } from './company'
 import { CompanyService } from './company.service'
 
@@ -10,7 +11,10 @@ import { CompanyService } from './company.service'
 export class AppComponent implements OnInit {
   company: Company;
 
-  constructor(private companyService: CompanyService) { }
+  constructor(router: Router, private companyService: CompanyService) { 
+      router.events.subscribe((url:any) => console.log(url));
+      console.log(router.url);
+  }
 
   ngOnInit() {
     this.companyService.getCompany("RBC").subscribe(
