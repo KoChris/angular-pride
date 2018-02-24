@@ -7,7 +7,7 @@ export class CompanyService {
 
   constructor(private http: HttpClient) { }
 
-  getCompany() {
-    return this.http.get<Company>("https://travistest.cfapps.io/mock/RBC")
+  getCompany(company: string) {
+    return this.http.get<Company>(`https://travistest.cfapps.io/mock/${company}`)
   }
 }

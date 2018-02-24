@@ -19,7 +19,7 @@ export class CompanyComponent implements OnInit {
   }
 
   showCompany() {
-    this.companyService.getCompany().subscribe(
+    this.companyService.getCompany("RBC").subscribe(
       data => this.company = {...data});
   }
 
