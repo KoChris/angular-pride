@@ -1,3 +1,6 @@
-<p>
-  year-over-year works!
-</p>
+<!--<ul>
+  <li *ngFor="let year of years">{{year.year}} - {{year.score}}</li>
+</ul>-->
+<div *ngIf="chart">
+  <canvas id='canvas'>{{ chart }}</canvas>
+</div>

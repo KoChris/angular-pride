@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { CompanyComponent } from './company/company.component';
 import { CompanyService } from './company.service';
-import { CategoriesComponent } from './categories/categories.component';
 import { CategoryComponent } from './category/category.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { YearOverYearComponent } from './year-over-year/year-over-year.component';
