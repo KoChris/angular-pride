@@ -3,3 +3,4 @@
 applications:
 - name: pridehack-fe
   buildpack: staticfile_buildpack
+  memory: 512M
