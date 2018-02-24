@@ -1,4 +1,11 @@
 <h2>{{ company?.name }}</h2>
 <div>
-	<span>{{ company?.overallScore }}</span> <span>{{ company?.improvedScore }}</span>
+	<div class="score scoreOverall">
+		<span>{{ company?.overallScore }}</span>
+		<span>Score</span>
+	</div> 
+	<div class="score scoreImproved">
+		<span>{{ company?.improvedScore }}</span>
+		<span>Improved</span>
+	</div>
 </div>
