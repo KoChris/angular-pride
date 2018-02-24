@@ -2,5 +2,5 @@
   <li *ngFor="let year of years">{{year.year}} - {{year.score}}</li>
 </ul>-->
 <div *ngIf="chart">
-  <canvas id='canvas'>{{ chart }}</canvas>
+  <canvas id={{chartId}}>{{ chart }}</canvas>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 import { Year } from '../Year';
 import { Chart } from 'chart.js';
 
@@ -11,28 +11,35 @@ export class YearOverYearComponent implements OnInit {
 
   @Input() years: Year[];
 
-  chart = [];
+  private chart = [];
 
-  chartId: string = "abc";
+  private chartId: string = 'ch'.concat(Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5));
 
-  constructor() { }
+  private yearLabels = [];
+  private scores = [];
+
+  constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
-    let yearLabels = [];
-    let scores = [];
-
     this.years.forEach(y => {
-      yearLabels.push(y.year);
-      scores.push(y.score);
+      this.yearLabels.push(y.year);
+      this.scores.push(y.score);
     })
+  }
 
-    this.chart= new Chart('canvas', {
+  ngAfterViewInit() {
+    this.createChart(this.chartId)
+  }
+
+  createChart(canvasId: string) {
+    let ctx = this.elementRef.nativeElement.querySelector('#'.concat(canvasId));
+    this.chart= new Chart(canvasId, {
       type: 'line',
       data: {
-        labels: yearLabels,
+        labels: this.yearLabels,
         datasets: [
           {
-            data: scores,
+            data: this.scores,
             borderColor: "#3cba9F",
             fill: false
           }
