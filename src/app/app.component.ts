@@ -1,21 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Company } from './company'
-import { CompanyService } from './company.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  company: Company;
-
-  constructor(private companyService: CompanyService) { }
-
-  ngOnInit() {
-    this.companyService.getCompany("RBC").subscribe(
-      data => { console.log(data); this.company = {...data}; }
-    );
+export class AppComponent {
+  
+  constructor(router: Router) { 
+       router.events.subscribe((url:any) => console.log(url));
   }
 
 }

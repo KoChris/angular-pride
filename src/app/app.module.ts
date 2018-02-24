@@ -8,6 +8,8 @@ import { CompanyService } from './company.service';
 import { CategoryComponent } from './category/category.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { YearOverYearComponent } from './year-over-year/year-over-year.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ScorecardComponent } from './scorecard/scorecard.component';
 
 
 @NgModule({
@@ -16,11 +18,13 @@ import { YearOverYearComponent } from './year-over-year/year-over-year.component
     CompanyComponent,
     CategoryComponent,
     ProgressBarComponent,
-    YearOverYearComponent
+    YearOverYearComponent,
+    ScorecardComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     CompanyService

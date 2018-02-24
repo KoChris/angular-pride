@@ -1,12 +1,10 @@
-<h3>{{category?.name}}</h3>
+<h3>{{category?.categoryName}}</h3>
 
 <div>
-	<app-progress-bar [currentScore]="category?.currentScore" [improvedScore]="category?.improvedScore"></app-progress-bar>
-	<ng-container *ngIf="category">
+	<app-progress-bar [currentScore]="category?.actualScore" [improvedScore]="category?.improvedScore"></app-progress-bar>
 	<ul *ngFor="let suggestion of category?.suggestions">
 		<li>{{suggestion}}</li>
 	</ul>
-	</ng-container>
 </div>
 
 <app-year-over-year [years]="category?.yearOverYear"></app-year-over-year>
