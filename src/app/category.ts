@@ -1,7 +1,7 @@
 import { Year } from "./year"
 
 export class Category {
-    categoryName: string;
+    name: string;
     actualScore: number;
     improvedScore: number;
     yearOverYear: Year[];

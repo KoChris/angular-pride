@@ -1,5 +1,7 @@
 <h1>LGBT Workplace Inclusion Index</h1>
 <app-company [company]="company"></app-company>
-<div *ngFor="let category of company?.categories">
-  <app-category [category]="category"></app-category>
+<div class="categories">
+	<div *ngFor="let category of company?.categories">
+	  <app-category [category]="category"></app-category>
+	</div>
 </div>

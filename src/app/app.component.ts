@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   
   constructor(router: Router) { 
-       router.events.subscribe((url:any) => console.log(url));
+       // router.events.subscribe((url:any) => console.log(url));
   }
 
 }

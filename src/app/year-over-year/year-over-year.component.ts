@@ -41,6 +41,7 @@ export class YearOverYearComponent implements OnInit {
           {
             data: this.scores,
             borderColor: "#3cba9F",
+
             fill: false
           }
         ]
@@ -54,7 +55,11 @@ export class YearOverYearComponent implements OnInit {
             display: true
           }],
           yAxes: [{
-            display: true
+            display: true,
+            ticks: {
+              min: 0,
+              max: 100
+            }
           }]
         }
       }

@@ -1,2 +1,6 @@
-<progress value="{{ currentScore }}" max="100"></progress>
-<progress value="{{ improvedScore }}" max="100"></progress>
+<div class="currentScore">
+	{{currentScore}} <progress value="{{ currentScore }}" max="100"></progress>
+</div>
+<div class="improvedScore">
+	{{improvedScore}} <progress value="{{ improvedScore }}" max="100"></progress>
+</div>
