@@ -1,0 +1,10 @@
+<h3>{{category?.categoryName}}</h3>
+
+<div>
+	<app-progress-bar [currentScore]="category?.actualScore" [improvedScore]="category?.improvedScore"></app-progress-bar>
+	<ul *ngFor="let suggestion of category?.suggestions">
+		<li>{{suggestion}}</li>
+	</ul>
+</div>
+
+<app-year-over-year [years]="category?.yearOverYear"></app-year-over-year>
