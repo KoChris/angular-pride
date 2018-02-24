@@ -1,4 +1,4 @@
-import { Year } from "./Year"
+import { Year } from "./year"
 
 export class Category {
     categoryName: string;

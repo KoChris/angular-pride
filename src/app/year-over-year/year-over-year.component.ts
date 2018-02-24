@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Year } from '../Year';
+import { Year } from '../year';
 
 @Component({
   selector: 'app-year-over-year',
