@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ElementRef } from '@angular/core';
-import { Year } from '../Year';
+import { Year } from '../year';
 import { Chart } from 'chart.js';
 
 @Component({
