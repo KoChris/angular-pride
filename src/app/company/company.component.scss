@@ -1,18 +1,41 @@
-.score {
-	&:first-child {
-		font-size: 30px;
-	}
+$purple-color: #92278f;
+$green-color: #8dc73f;
+$blue-color:#00adef;
+$orange-color: #f7941e;
+$red-color: #ff0000;
+
+h2 {
+	font-size: 55px;
+	margin-bottom: 0px;
+	border-bottom: thick solid $purple-color;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.scoreLabel {
 	font-size: 20px;
 }
-
-.scoreOverall {
-	&:first-child {
-		color: orange;			
-	}
+.overallScore {
+	font-size: 30px;
+	font-weight: bolder;
+	color: $green-color
 }
 
-.scoreImproved {
-	&:first-child {
-		color: green;			
-	}
+p {
+	font-style: italic;
+	color: #334444;
+}
+
+.improvedScore {
+	font-weight: bold;
+	font-style: normal;
+	color: $orange-color;
 }

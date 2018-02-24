@@ -1,11 +1,8 @@
 <h2>{{ company?.name }}</h2>
-<div>
-	<div class="score scoreOverall">
-		<span>{{ company?.overallScore }}</span>
-		<span>Score</span>
-	</div> 
-	<div class="score scoreImproved">
-		<span>{{ company?.improvedScore }}</span>
-		<span>Improved</span>
-	</div>
+<hr/>
+<div class="score">
+	<span class="scoreLabel">Score:</span>
+	<span class="overallScore">{{ company?.overallScore }}</span>
+	<p>By implementing the following suggestions, next year your score could be 
+		<span class="improvedScore">{{ company?.improvedScore }}</span></p>
 </div>
