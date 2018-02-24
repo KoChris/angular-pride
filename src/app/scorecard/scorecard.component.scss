@@ -1,3 +1,19 @@
 h1 {
-	color: #6c6cff;
+	color: #ffffff;
+	background-color:purple;
+	background-image: url("../../assets/rainbow-vector-background.jpg");
+	padding: 10px 20px;
+	text-shadow: 0px 0px 5px #000000;
+}
+
+.categories {
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-gap: 4%;
+}
+
+@media (max-width: 750px) { 
+	.categories {
+		grid-template-columns: 100%;
+	}
 }
