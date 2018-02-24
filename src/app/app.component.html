@@ -1,4 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>Score Card</h1>
 <app-company [company]="company"></app-company>
-
+<div *ngFor="let category of company?.categories">
+  <app-category [category]="category"></app-category>
+</div>

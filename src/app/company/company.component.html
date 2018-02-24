@@ -1,2 +1,4 @@
-<p>Company Component</p>
-<div *ngIf="company">{{ company.name }} {{ company.overallScore }} {{ company.improvedScore }} </div>
+<h2>{{ company?.name }}</h2>
+<div>
+	<span>{{ company?.overallScore }}</span> <span>{{ company?.improvedScore }}</span>
+</div>

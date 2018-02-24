@@ -14,7 +14,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.companyService.getCompany("RBC").subscribe(
-      data => this.company = {...data});
+      data => { console.log(data); this.company = {...data}; }
+    );
   }
 
 }
