@@ -16,6 +16,7 @@ export class ScorecardComponent implements OnInit {
 
   ngOnInit() {
     const company = this.route.snapshot.paramMap.get('company');
+    if (!company) company = "rbc";
     this.companyService.getCompany(company).subscribe(
       data => { console.log(data); this.company = {...data}; }
     );

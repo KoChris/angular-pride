@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ScorecardComponent } from './scorecard/scorecard.component';
 
 const routes: Routes = [
-  { path: ':company', component: ScorecardComponent }
+  { path: ':company', component: ScorecardComponent },
+  { path: '', component: ScorecardComponent }
 ];
 
 @NgModule({
