@@ -1,6 +1,6 @@
 
 ---
 applications:
-- name: pridehack-fe
+- name: pridehack-digital
   buildpack: staticfile_buildpack
   memory: 512M
