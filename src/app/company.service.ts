@@ -8,6 +8,6 @@ export class CompanyService {
   constructor(private http: HttpClient) { }
 
   getCompany(company: string) {
-    return this.http.get<Company>(`https://travistest.cfapps.io/mock/${company}`)
+    return this.http.get<Company>(`https://pridehacks-be.cfapps.io/mock/${company}`)
   }
 }
