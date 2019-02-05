@@ -2,4 +2,4 @@
 applications:
 - name: pridehack-digital
   buildpack: staticfile_buildpack
-  path: /dist
+  path: dist/
